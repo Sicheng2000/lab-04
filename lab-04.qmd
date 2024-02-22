@@ -1,20 +1,31 @@
 ---
 title: "Lab 04: Scaffolding reproducible research"
 author: "Sicheng Wang"
-format: 
+format:
   pdf:
     number-sections: true
     toc: true
     toc-depth: 1
 ---
+
+<!-- Summary
+Excellent job, Sicheng! You've done and excellent job with the content. It really shows that you've been applying yourself to the course material! I love that you have been exploring new features and strategies, such as the `knitr::include_graphics()` function and using the toc, cross-references, etc.
+
+I would suggest that you consider adding a bit more detail to the "Assessment" section. This is a great opportunity to reflect on your learning and to verbalize your understanding of the concepts. This will help to solidify your knowledge and will serve as a reminder of your progress as we get near the end of the course.
+-->
+
 # Reproducible research
 ## What is reproducible research?
 
 *    **Reproducible Research**
-In academic setting,  reproducible research refers to work that can be replicated by other scholars following the steps outlined in the `Methodology` part, resulting in the same results as the original author. As outlined in [Recipe #4](https://qtalr.github.io/qtalrkit/articles/recipe-4.html), the concept of reproducible research specifically refers to reproducible projects, which aims to mitigate the impact of varying computing environments by documenting every step, typically through files like a README file outlining the project's objectives and production steps, as well as a DESCRIPTION file detailing the computing environment and packages utilized. This approach is particularly valuable for collaborative work, as it allows others to test the reproducibility and applicability of the work across different settings. 
+In academic setting, reproducible research refers to work that can be replicated by other scholars following the steps outlined in the `Methodology` part, resulting in the same results as the original author. As outlined in [Recipe #4](https://qtalr.github.io/qtalrkit/articles/recipe-4.html), the concept of reproducible research specifically refers to reproducible projects, which aims to mitigate the impact of varying computing environments by documenting every step, typically through files like a `README` file outlining the project's objectives and production steps, as well as a `DESCRIPTION` file detailing the computing environment and packages utilized. This approach is particularly valuable for collaborative work, as it allows others to test the reproducibility and applicability of the work across different settings. <!-- Great job summarizing the concept of reproducible research! It is sometimes nice to have file and directory names appear as verbatim inside backticks ` -->
+
+<!-- You are getting good at using cross-references with @. Great job! -->
 
 *    **Computing Environment and Project Structure**
-The computing environment includes hardware (see @fig-1), the operating system (see @fig-2), and apps (see @fig-3), whereas the project structure refers to the files and folders contained in our project. 
+The computing environment includes hardware (see @fig-1), the operating system (see @fig-2), and apps (see @fig-3), whereas the project structure refers to the files and folders contained in our project.
+
+<!-- Excellent use of the `include_graphics()` function! -->
 
 ```{r}
 #| label: fig-1
@@ -38,7 +49,7 @@ knitr::include_graphics("operating_system.png")
 
 ```{r}
 #| label: fig-3
-#| fig-cap: "Computer Hardware from [CODERUS](https://www.coderus.com/software-101-a-complete-guide-to-the-different-types-of-software/)"
+#| fig-cap: "Computer Software from [CODERUS](https://www.coderus.com/software-101-a-complete-guide-to-the-different-types-of-software/)"
 #| echo: false
 #| message: false
 
@@ -46,7 +57,7 @@ knitr::include_graphics("apps.png")
 ```
 
 *    **Git and GitHub**
-Git is an app which download in individual' computer which could be used to track changes in your local repositories while Github is a web which allows individuals to share repositories. When connecting them by Rstudio, the repository one made could upload to one's Github account to let others get it by cloning to their own computers or forking to their Github account. And people who cloning or forking others' repositories could also editing in their own computer or in their Github account which would not influence the original author's reporitory. They could use Git app to upload(push) to their own forking repository or replacing the original one if the original author permit that through pull request. Besides, the tracking function of Git makes the changes available to individuals by commiting button. Under the repository in Github, one could also report issues which shows the interactive function of Github. Though the above functions, Github and Git help our project be more reducible.
+Git is an app which is downloaded on an individual's computer which could be used to track changes in your local repositories while Github is a web which allows individuals to share repositories. When connecting them by Rstudio, the repository one made could upload to one's Github account to let others get it by cloning to their own computers or forking to their Github account. And people who clone or fork others' repositories could also edit these repositories on their own computer or in their Github account which would not influence the original author's reporitory. They could use Git app to upload (push) to their own forking repository or replacing the original one if the original author permit that through pull request<!-- Excellent description! -->. Besides, the tracking function of Git makes the changes available to individuals by using the commit button. Under the repository in Github, one could also report issues which shows the interactive function of Github. Though the above functions, Github and Git help our project be more reproducible.
 
 ## Why it is important for modern science?
 
@@ -96,10 +107,9 @@ knitr::include_graphics("commit.png")
 
 You could also leave a commit message to remind yourself the changes you made in this version, see @fig-7:
 
-P.S. 
+<!-- You can either use the `knitr::include_graphics()` function or Markdown for including images. Here's an example: -->
 
-*    `?` represents the file do not exist in the repository you clone from Github.
-*    `M` represents the file exist in the original repository but have been modified by you
+![Commit message](commit_message.png){#fig-7}
 
 ## Pushing
 This step is for individual who wants to refresh the original repository in Github. This is especially useful when you want to keep the repository you shared with others updated or when you are working together with others. Push button helps you to upload the revised local repository to your Github account. In Rstudio's Git pane, your could find the push button, see @fig-8:
@@ -114,6 +124,9 @@ knitr::include_graphics("push.png")
 ```
 
 # Assessment
+
+<!-- I can stress enough how important elaborating in this section is for your overall learning. Verbalizing your learning will really solidify your knowledge and will serve to remind you of your progress as we get near the end of the course! -->
+
 ## What did you learn?
 
 ## What did you find most/ least challenging?
@@ -122,4 +135,4 @@ knitr::include_graphics("push.png")
 Instructor? R or Quarto documentation, Websites (provide links)?
 
 ## What more would you like to know about reproducible research and/ or Git and GitHub?
-Find potential resources you might consult to continue your learning. Provide links and a brief description of the resource.k
+Find potential resources you might consult to continue your learning. Provide links and a brief description of the resource.
